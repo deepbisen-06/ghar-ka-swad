@@ -17,7 +17,7 @@ An award-winning, interactive digital editorial experience celebrating the timel
 
 <br />
 
-<img src="docs/images/hero_thali.jpg" alt="Traditional Indian Comfort Thali with steaming bowls of Rajma, Dal Tadka, Basmati Rice, and Desi Ghee" width="700" style="border-radius: 20px; box-shadow: 0 16px 40px rgba(30, 27, 24, 0.12);" />
+<img src="docs/screenshots/hero_preview.png" alt="Ghar Ka Swad Hero Section with traditional brass thali visual anchor and warm editorial typography" width="900" style="border-radius: 16px; border: 1px solid #E7DFD3; box-shadow: 0 16px 40px rgba(30, 27, 24, 0.12);" />
 
 </div>
 
@@ -27,7 +27,7 @@ An award-winning, interactive digital editorial experience celebrating the timel
 
 - [🌟 Project Vision & Philosophy](#-project-vision--philosophy)
 - [🗺️ System Architecture & User Journey Flowchart](#️-system-architecture--user-journey-flowchart)
-- [✨ Key Features & Interactive Modules](#-key-features--interactive-modules)
+- [✨ Key Features & Live Website Tour](#-key-features--live-website-tour)
   - [1. Hero Experience (The First 3 Seconds)](#1-hero-experience-the-first-3-seconds)
   - [2. Comfort Discovery Questionnaire](#2-comfort-discovery-questionnaire)
   - [3. Eight Signature Comfort Food Traditions](#3-eight-signature-comfort-food-traditions)
@@ -103,7 +103,7 @@ flowchart TD
 
 ---
 
-## ✨ Key Features & Interactive Modules
+## ✨ Key Features & Live Website Tour
 
 ### 1. Hero Experience (The First 3 Seconds)
 * **Visual Lockup**: An Indian brass thali with simmering rajma, yellow dal tadka, aged basmati rice, sirka onions, and crispy papad.
@@ -111,8 +111,7 @@ flowchart TD
 * **Editorial Typography**: Cormorant Garamond display serif headline with real-time local time-of-day greeting badge (*Morning, Afternoon, Evening, Midnight*).
 
 <div align="center">
-<img src="docs/images/dish_rajma_chawal.jpg" width="48%" style="border-radius: 12px;" />
-<img src="docs/images/dish_dal_tadka.jpg" width="48%" style="border-radius: 12px;" />
+<img src="docs/screenshots/hero_preview.png" alt="Ghar Ka Swad Hero Section" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
 </div>
 
 ---
@@ -125,6 +124,10 @@ flowchart TD
   * ❤️ *Something nostalgic & comforting* $\rightarrow$ Dhaba-Style Rajma Chawal
   * ☕ *Something my family made at dawn* $\rightarrow$ Kanda Batata Poha
 * Instant inline reveal with emotional story excerpts, flavor profiles, and single-click plate addition.
+
+<div align="center">
+<img src="docs/screenshots/discovery_preview.png" alt="Comfort Discovery Questionnaire and Soul Match Card" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
+</div>
 
 ---
 
@@ -145,9 +148,7 @@ Each card features:
 * Inline **"Story & Ritual"** expansion toggle without modal interruptions
 
 <div align="center">
-<img src="docs/images/dish_poha.jpg" width="31%" style="border-radius: 10px;" />
-<img src="docs/images/dish_khichdi.jpg" width="31%" style="border-radius: 10px;" />
-<img src="docs/images/dish_misal_pav.jpg" width="31%" style="border-radius: 10px;" />
+<img src="docs/screenshots/cards_preview.png" alt="Comfort Food Cards Grid with Score Meters and Ritual Expansions" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
 </div>
 
 ---
@@ -163,8 +164,7 @@ An interactive culinary oracle that consults grandmother's hearth to randomly su
 * **Atmosphere Transition**: Selecting a zone seamlessly switches regional storytelling, hospitality lore, signature flavor palettes, and regional food photography.
 
 <div align="center">
-<img src="docs/images/dish_idli_sambhar.jpg" width="48%" style="border-radius: 12px;" />
-<img src="docs/images/dish_masala_dosa.jpg" width="48%" style="border-radius: 12px;" />
+<img src="docs/screenshots/journey_preview.png" alt="Interactive India Map Cartography and Regional Lore Storytelling" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
 </div>
 
 ---
@@ -176,6 +176,10 @@ An interactive culinary oracle that consults grandmother's hearth to randomly su
   * Keyboard navigation: `ArrowRight` (Next), `ArrowLeft` (Previous), `Escape` (Exit)
   * Integrated interactive kitchen timer widget (Play/Pause/Reset)
   * Large-print typography, sensory check callouts, and grandmother's golden advice
+
+<div align="center">
+<img src="docs/screenshots/recipe_preview.png" alt="Featured Recipe Experience with Large Rajma Hero Image and Timeline" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
+</div>
 
 ---
 
@@ -189,6 +193,10 @@ An interactive culinary oracle that consults grandmother's hearth to randomly su
 * Vintage postcard gallery featuring genuine memories of grandmother's kitchen, monsoon train journeys, and college canteen mornings.
 * **Zero Empty State**: Comes pre-populated with warm starter memories.
 * **Interactive Dialog**: "Leave Your Memory" form composing the accessible `Dialog.tsx` primitive, persisting immediately to `localStorage` with optimistic UI updates.
+
+<div align="center">
+<img src="docs/screenshots/memories_preview.png" alt="Community Memory Wall with Postcard Cards and Submission Modal" width="900" style="border-radius: 12px; border: 1px solid #E7DFD3;" />
+</div>
 
 ---
 
@@ -205,10 +213,6 @@ An interactive culinary oracle that consults grandmother's hearth to randomly su
   * Displays total comfort score and dish thumbnails
   * Computes derived user comfort archetype via `useComfortPersona` (*e.g., "The Nostalgic Sunday Soul", "The Fiery Street Romantic", "The Soulful Healer"*)
   * Native Web Share API integration with automatic fallback to clipboard copy and toast confirmation
-
-<div align="center">
-<img src="docs/images/dish_kadhi_chawal.jpg" width="60%" style="border-radius: 12px;" />
-</div>
 
 ---
 
