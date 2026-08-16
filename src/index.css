@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F8F4EE;
+    --color-surface: #FFFDF9;
+    --color-text-primary: #1E1B18;
+    --color-text-muted: #635E59;
+    --color-accent: #C56A2D;
+    --color-gold: #D8A24A;
+    --color-olive: #6E7A52;
+    --color-border: #E7DFD3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F8F4EE;
+    color: #1E1B18;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F8F4EE;
+    color: #1E1B18;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8F4EE;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E7DFD3;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D8A24A;
+  }
+
+  /* Focus visible accessibility styling */
+  *:focus-visible {
+    outline: 2px solid #C56A2D;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles for Heirloom Recipe Card */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .recipe-card-printable {
+    box-shadow: none !important;
+    border: 2px solid #1E1B18 !important;
+    page-break-inside: avoid;
+  }
+}
